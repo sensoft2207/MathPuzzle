@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/button_bg_rounded_corners">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="30dp"
+                    android:gravity="center"
+                    android:paddingRight="30dp"
+                    android:background="@drawable/dialog_half_circle">
+
+                    <com.example.bugssolveinc.bangou.font.MyTextviewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Choose Level"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textColor="@color/parts_main"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:paddingLeft="30dp"
+                    android:gravity="center"
+                    android:paddingRight="30dp">
+
+                    <LinearLayout
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:gravity="center"
+                        android:elevation="10dp"
+                        android:background="@drawable/operation_circle_white">
+
+
+                        <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                            android:id="@+id/tv_dialog_easy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Easy"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:paddingLeft="30dp"
+                    android:gravity="center|top"
+                    android:paddingRight="30dp">
+
+                    <LinearLayout
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:gravity="center"
+                        android:elevation="10dp"
+                        android:background="@drawable/operation_circle_white">
+
+
+                        <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                            android:id="@+id/tv_dialog_hard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hard"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right|top"
+            android:tint="#212121"
+            android:src="@drawable/cancel" />
+
+    </FrameLayout>
+
+</LinearLayout>

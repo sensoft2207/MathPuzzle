@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context="com.example.bugssolveinc.bangou.activity.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:background="@drawable/half_circle">
+
+                <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                    android:id="@+id/tv_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="@string/game_difficuilt"
+                    android:textColor="@color/main_bg" />
+
+              <!--  <ImageView
+                    android:background="@drawable/bangoe_logo"
+                    android:layout_width="145dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />-->
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1.25"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="45dp"
+                android:paddingRight="45dp"
+                android:layout_height="match_parent">
+
+
+
+                <com.example.bugssolveinc.bangou.font.MyButtonBlack
+                    android:id="@+id/btn_easy_level"
+                    android:layout_width="155dp"
+                    android:layout_gravity="center"
+                    android:text="@string/easy_level"
+                    android:textColor="@color/main_bg"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/button_bg_rounded_corners"
+                    android:layout_height="45dp" />
+
+                <com.example.bugssolveinc.bangou.font.MyButtonBlack
+                    android:id="@+id/btn_hard_level"
+                    android:layout_width="155dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/main_bg"
+                    android:text="@string/hard_level"
+                    android:background="@drawable/button_bg_rounded_corners"
+                    android:layout_height="45dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_weight="2.45"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_height="match_parent"
+                android:background="@drawable/sound_back"
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp">
+
+
+                <ImageView
+                    android:id="@+id/iv_set_music"
+                    android:src="@drawable/sound"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:background="@drawable/share_back">
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:src="@drawable/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

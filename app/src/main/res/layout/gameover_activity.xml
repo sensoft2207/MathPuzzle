@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_bg">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:background="@drawable/half_circle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                    android:id="@+id/tv_excellent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Excellent"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:textColor="@color/main_bg"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/ln_high_scrore"
+                        android:layout_width="190dp"
+                        android:layout_height="190dp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_splash"
+                        android:elevation="20dp"
+                        android:orientation="vertical"
+                        android:visibility="invisible"
+                        android:paddingTop="70dp">
+
+                        <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="High Scrore"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:textColor="#ffffff"/>
+
+                        <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                            android:id="@+id/tv_highscore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:paddingTop="5dp"
+                            android:textColor="#ffffff"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/ln_total_point"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:gravity="center"
+                            android:background="@drawable/operation_circle_white"
+                            android:elevation="10dp"
+                            android:orientation="vertical"
+                            android:visibility="invisible">
+
+                            <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total points"
+                                android:gravity="center"
+                                android:textSize="20sp"
+                                android:textColor="#ffffff"/>
+
+                            <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                                android:id="@+id/tv_total_point"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00"
+                                android:gravity="center"
+                                android:textSize="15sp"
+                                android:paddingTop="5dp"
+                                android:textColor="#ffffff"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/ln_easy_visibility"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/ln_total_balance"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:background="@drawable/operation_circle_white"
+                            android:elevation="20dp"
+                            android:orientation="vertical">
+
+                            <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Difficulty"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textColor="#ffffff"/>
+
+                            <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                                android:id="@+id/tv_difficulty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Easy"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:paddingTop="5dp"
+                                android:textColor="#ffffff"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:background="@drawable/operation_circle_white"
+                            android:elevation="20dp"
+                            android:orientation="vertical">
+
+                            <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Time"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textColor="#ffffff"/>
+
+                            <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                                android:id="@+id/tv_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00:00"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:paddingTop="5dp"
+                                android:textColor="#ffffff"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25dp"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:background="@drawable/operation_circle_white"
+                            android:elevation="20dp"
+                            android:orientation="vertical">
+
+                            <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Best Time"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textColor="#ffffff"/>
+
+                            <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                                android:id="@+id/tv_best_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00:00"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:paddingTop="5dp"
+                                android:textColor="#ffffff"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                android:background="@drawable/half_circle_bottom">
+
+                <LinearLayout
+                    android:id="@+id/ln_new_game_win"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:elevation="10dp">
+
+
+                    <com.example.bugssolveinc.bangou.font.MyTextviewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Game"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="#004807"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_gamee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.waynell.library.DropAnimationView
+            android:id="@+id/drop_animation_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:minSize="35dp"
+            app:maxSize="60dp"
+            app:largePercent="80%"
+            app:rate="100"
+            app:xAnimate="true"
+            app:yAnimate="true"
+            app:rotationAnimate="true"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
